@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Cat Clicker</title>
 </head>
-<body">
-    <ul id="cat-list"></ul>
+<body>
+    <ul id="cat-list" data-bind="foreach: catList">
+    <li data-bind="text:$data.name, click:$parent.selectCat"></li>
+    </ul>
     <div id="cat"  data-bind="with: currentCat">
 
         <h2 id="cat-name" data-bind="text: name"></h2>
