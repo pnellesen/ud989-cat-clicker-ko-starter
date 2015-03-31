@@ -45,8 +45,8 @@ var catViewModel = function() {
 		self.currentCat().clickCount(self.currentCat().clickCount() + 1);
 	};
 	
-	this.selectCat = function(whichCat) {
-		self.currentCat(whichCat);
+	this.selectCat = function(selectedCat) {
+		self.currentCat(selectedCat);
 	}
 	
 };
